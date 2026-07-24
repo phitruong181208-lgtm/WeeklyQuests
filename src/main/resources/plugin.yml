@@ -1,0 +1,18 @@
+name: WeeklyQuests
+version: 1.0
+main: com.yourname.weeklyquests.Main
+api-version: "1.26"
+author: Your Name
+description: Plugin nhiệm vụ theo tuần tự nhiên cho Paper 26.1.2
+commands:
+  weeklyquest:
+    description: Xem nhiệm vụ tuần
+    usage: /weeklyquest [gui|reload]
+    aliases: [wq, tuan]
+permissions:
+  weeklyquest.admin:
+    description: Quyền quản trị
+    default: op
+  weeklyquest.player:
+    description: Quyền người chơi
+    default: true
