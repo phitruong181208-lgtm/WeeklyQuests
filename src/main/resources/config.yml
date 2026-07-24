@@ -1,0 +1,91 @@
+general:
+  time-zone: "Asia/Ho_Chi_Minh"
+  check-interval: 60
+  loop-weeks: false
+  auto-save: 5
+
+week-quests:
+  1:
+    name: "💎 Đào 500 Kim Cương"
+    description:
+      - "• Đào tổng cộng 500 Đá Quặng Kim Cương"
+      - "  (tính cả Kim Cương Thường và Kim Cương Sâu)"
+    objectives:
+      - type: mine
+        material: DIAMOND_ORE
+        amount: 500
+
+  2:
+    name: "⚔️ Tiêu diệt 2.000 quái vật"
+    description:
+      - "• Tiêu diệt tổng cộng 2.000 quái vật bất kỳ"
+    objectives:
+      - type: kill_any
+        amount: 2000
+
+  3:
+    name: "🔥 Đào 200 Ancient Debris"
+    description:
+      - "• Đến thế giới Nether"
+      - "• Đào 200 Ancient Debris"
+    objectives:
+      - type: world
+        world: NETHER
+        amount: 1
+      - type: mine
+        material: ANCIENT_DEBRIS
+        amount: 200
+
+  4:
+    name: "🌌 Tiến vào The End, tiêu diệt Ender Dragon và lấy 1 Elytra"
+    description:
+      - "• Đến thế giới End"
+      - "• Tiêu diệt 1 Ender Dragon"
+      - "• Thu thập 1 Elytra"
+    objectives:
+      - type: world
+        world: END
+        amount: 1
+      - type: kill
+        entity: ENDER_DRAGON
+        amount: 1
+      - type: collect
+        material: ELYTRA
+        amount: 1
+
+  5:
+    name: "🏃 Di chuyển tổng cộng 200.000 block"
+    description:
+      - "• Di chuyển tổng cộng 200.000 block bằng bất kỳ cách nào"
+    objectives:
+      - type: travel_distance
+        amount: 200000
+
+  6:
+    name: "👹 Tiêu diệt 5 Warden"
+    description:
+      - "• Khám phá Ancient City"
+      - "• Tiêu diệt 5 Warden"
+    objectives:
+      - type: kill
+        entity: WARDEN
+        amount: 5
+
+  7:
+    name: "💀 Tiêu diệt 3 Wither"
+    description:
+      - "• Triệu hồi và tiêu diệt 3 Wither"
+    objectives:
+      - type: kill
+        entity: WITHER
+        amount: 3
+
+  8:
+    name: "🐉 Tiêu diệt 3 Ender Dragon"
+    description:
+      - "• Tiêu diệt 3 Ender Dragon"
+      - "• Kết thúc mùa nhiệm vụ!"
+    objectives:
+      - type: kill
+        entity: ENDER_DRAGON
+        amount: 3
