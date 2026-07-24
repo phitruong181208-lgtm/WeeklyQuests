@@ -8,14 +8,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4.2.2
+      - name: Lấy mã nguồn
+        uses:actions/checkout@v5
 
-      - name: Set up Java 21
-        uses: actions/setup-java@v4.5.0
+      - name: Cài đặt Java 21
+        uses:actions/setup-java@v5
         with:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Build with Maven
-        run: mvn clean package --no-transfer-progress
+      - name: Biên dịch với Maven
+        run: mvn clean package --no-transfer-progress --batch-mode
+
+      - name: Lưu tệp kết quả
+        uses:actions/upload-artifact@v5
+        with:
+          name: WeeklyQuests-Plugin
+          path: target/WeeklyQuests.jar
